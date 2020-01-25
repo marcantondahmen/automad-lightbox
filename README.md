@@ -1,6 +1,6 @@
 # Automad Lightbox
 
-The Lightbox extensions is a custom string function that easily let's you create lightbox slideshows out of inline images. It can be used with any text variable including markdown image links. 
+The Lightbox extensions is a custom string function for [Automad](https://automad.org) that easily let's you create lightbox slideshows out of inline images. It can be used with any text variable including markdown image links. 
 
 ## Assets
 
