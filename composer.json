@@ -1,0 +1,13 @@
+{
+    "name": "automad/lightbox",
+    "description": "A custom string function for creating a lightbox slideshow out of inline images.",
+    "type": "automad-package",
+    "keywords": ["extension"],
+    "license": "MIT",
+    "require": {
+        "automad/package-installer": "^1.1"
+    },
+    "autoload": {
+        "classmap": [""]
+    }
+}
