@@ -14,7 +14,7 @@ The lightbox extension requires jQuery to be loaded along with the included asse
 
 Somewhere in the body of your template the extension can be used with any variable as follows:
 
-    @{ text | automad/lightbox | markdown }
+    @{ text | Automad/Lightbox | markdown }
 
 ## Using Inline Images in Content
 
