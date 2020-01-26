@@ -19,8 +19,7 @@
 				caption = $('<div class="caption"></div>').appendTo(lightbox),
 				captionText = $('<div class="caption-text"></div>').appendTo(caption),
 				close = $('<a class="close" href="#"></a>').appendTo(lightbox),
-				prev = $('<a class="prev" href="#"></a>').appendTo(lightbox),
-				next = $('<a class="next" href="#"></a>').appendTo(lightbox),
+				
 				isVisible = false,	// Lightbox is visible
 				origWidth,			// Original width of image
 				origHeight,			// Original height of image
@@ -45,26 +44,33 @@
 
 			});
 
-			// Buttons
-			prev.click(function () {
-				if (current > 0) {
-					current -= 1;
-				} else {
-					current = images.length - 1;
-				}
-				changeImage(current);
-				return false;
-			});
+			if (images.length > 1) {
 
-			next.click(function () {
-				if (images.length > (current + 1)) {
-					current += 1;
-				} else {
-					current = 0;
-				}
-				changeImage(current);
-				return false;
-			});
+				var prev = $('<a class="prev" href="#"></a>').appendTo(lightbox),
+					next = $('<a class="next" href="#"></a>').appendTo(lightbox);
+
+				// Buttons
+				prev.click(function () {
+					if (current > 0) {
+						current -= 1;
+					} else {
+						current = images.length - 1;
+					}
+					changeImage(current);
+					return false;
+				});
+
+				next.click(function () {
+					if (images.length > (current + 1)) {
+						current += 1;
+					} else {
+						current = 0;
+					}
+					changeImage(current);
+					return false;
+				});
+
+			}
 
 			// Set image size & fade in 
 			var setImageSizeAndFadeIn = function () {
