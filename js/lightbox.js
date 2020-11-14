@@ -15,7 +15,6 @@
 		if (images.length > 0) {
 
 			var lightbox = $('<div class="automad-lightbox"></div>').appendTo('body').hide(),
-				overlay = $('<div class="overlay"></div>').appendTo(lightbox).fadeTo(0, 0.9),
 				caption = $('<div class="caption"></div>').appendTo(lightbox),
 				captionText = $('<div class="caption-text"></div>').appendTo(caption),
 				close = $('<a class="close" href="#"></a>').appendTo(lightbox),
