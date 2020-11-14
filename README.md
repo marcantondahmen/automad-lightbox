@@ -6,7 +6,7 @@ The Lightbox extensions is a custom string function for [Automad](https://automa
 
 The lightbox extension requires jQuery to be loaded along with the included assets within your template's `<head>` section.
 
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="/packages/automad/lightbox/dist/lightbox.min.js"></script>
     <link rel="stylesheet" href="/packages/automad/lightbox/dist/lightbox.min.css">
 
