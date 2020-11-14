@@ -17,7 +17,7 @@ class Lightbox {
 	public function Lightbox($str) {
 
 		// The pattern skips images already wrapped in a link.
-		$regex = '/(?<!\[)\!\[[^\]]*\]\(([\w\-\/\:\.]+)(?:\?(\d+)x(\d+))?\)/i';
+		$regex = '/(?<!\[)\!\[[^\]]*\]\(([\w\-\/\?\&\=\:\.]+)(?:\?(\d+)x(\d+))?\)/i';
 		$str = preg_replace_callback($regex, function($match) {
 
 			$file = AM_BASE_DIR . $match[1];
